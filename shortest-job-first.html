@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPU SCHEDULING ALGORITHMS</title>
+        <script type="module" src="./js/app.js"></script>
+    </head>
+    <body>
+        <a href="/">
+            <button>Back to Dashboard</button>
+        </a>
+        <h1>SHORTEST JOB FIRST</h1>
+        
+        <div>
+            <div>
+                <span>Number of Processes : </span> <input type="text" id="number_of_processes" value="1" placeholder="enter number of processes">
+            </div>
+            <br>
+            <div id="inputs-header" style="display: flex; justify-content: space-between; width: 800px;">
+                <span>Process Name</span><span>Time of Arrival</span><span>Burst Time</span>
+            </div>
+            <br>
+            <div id="inputs" >
+                <div style="display: flex; justify-content: space-between; width: 800px;">
+                    <input class="input-a" placeholder="enter process name..."><input class="input-b" placeholder="enter arrival time..."><input class="input-c" placeholder="enter burst time...">
+                </div>
+            </div>
+            <br>
+            <button id="solve">SOLVE</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <table id="container">
+                <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Start</th>
+                        <th>End</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="singleJob">
+                        <td class="job"></td>
+                        <td class="start"></td>
+                        <td class="end"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
